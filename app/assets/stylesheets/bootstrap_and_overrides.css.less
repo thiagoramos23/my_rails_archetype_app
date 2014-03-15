@@ -1,0 +1,77 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+
+body{ padding-top: 40px;}
+
+.container-fluid {
+	margin: 40px 0;
+}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: 95%;
+}
+
+.navbar-inner {
+	height: 40px;
+	min-height: 30px;
+
+}
+
+.navbar .nav {
+	text-shadow: none;
+}
+
+.navbar .brand{
+	background-image: url('/assets/logo.png');
+	background-size: 80px 25px; 
+	background-repeat: no-repeat;
+	background-position: 20px 10px;
+	text-indent: -9999999px;
+	width: 132px;
+	height: 35;
+}
+
+.panel {
+	background: #efefef;
+	text-indent: 5px;
+	border: 1px solid;
+	border-color: #e3e3e3; 
+	border-radius:5px;
+	  .box-shadow(0 1px 1px rgba(0,0,0,.05));
+	height: 40px;
+}
+
+.panel-title {
+	padding-left: 10px;
+}
+
+.badge-important{
+	background-color:#ff0012;
+}
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;

@@ -1,0 +1,20 @@
+base: &base
+  adapter: mysql2
+  username: ---
+  password: ---
+  encoding: utf8
+  reconnect: true
+  collation: utf8_general_ci
+  host: localhost
+
+development:
+  database: ---_development
+  <<: *base
+
+test:
+  database: ---_test
+  <<: *base
+
+production:
+  database: ---
+  <<: *base
